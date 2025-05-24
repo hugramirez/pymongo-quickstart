@@ -1,9 +1,9 @@
 # MongoDB + PyMongo Quickstart con Datos de ECOBICI CDMX
 
-<table>
-  <tr>
-    <td><img src="https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="MongoDB" width="120"/></td>
-    <td><img src="https://ecobici.cdmx.gob.mx/wp-content/uploads/2025/02/logo-ecobici-2025.png" alt="Ecobici CDMX" width="120"/></td>
+<table style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="border: none;"><img src="https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="MongoDB" width="120"/></td>
+    <td style="border: none;"><img src="https://ecobici.cdmx.gob.mx/wp-content/uploads/2025/02/logo-ecobici-2025.png" alt="Ecobici CDMX" width="120"/></td>
   </tr>
 </table>
 
