@@ -3,6 +3,26 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# zip files
+*.zip
+*.egg-info/
+*.egg
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# csv files
+*.csv
+*.csv.gz
+*.csv.xz
+*.csv.bz2
+*.csv.zip
+*.csv.lzma
+*.csv.zst
+*.csv.lz
+
 # C extensions
 *.so
 
