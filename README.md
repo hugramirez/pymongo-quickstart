@@ -1,6 +1,11 @@
 # MongoDB + PyMongo Quickstart con Datos de ECOBICI CDMX
 
-<img src="https://ecobici.cdmx.gob.mx/wp-content/uploads/2025/02/logo-ecobici-2025.png" alt="Ecobici CDMX" width="120"/>
+<table>
+  <tr>
+    <td><img src="https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="MongoDB" width="120"/></td>
+    <td><img src="https://ecobici.cdmx.gob.mx/wp-content/uploads/2025/02/logo-ecobici-2025.png" alt="Ecobici CDMX" width="120"/></td>
+  </tr>
+</table>
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-%E2%89%A53.6-green.svg)](https://www.mongodb.com/)
@@ -21,6 +26,7 @@ Ideal para desarrolladores, analistas de datos y entusiastas de la movilidad urb
 - [Consultas Básicas](#consultas-básicas)
 - [Ejemplos de Agregación](#ejemplos-de-agregación)
 - [Aplicaciones y Visualización](#aplicaciones-y-visualización)
+- [Detalles del Dataset (ecobici.md)](ecobici/ecobici.md)
 - [Markmap del Dataset](#markmap-del-dataset)
 - [Licencia](#licencia)
 
@@ -98,3 +104,6 @@ La **ingesta de datos** es el proceso de recopilación e importación de archivo
 
 Una vez recopilados, estos archivos se limpian, transforman y almacenan en una base de datos **MongoDB**, creando así un repositorio centralizado y coherente de datos de movilidad urbana. Esta estructura permite realizar análisis estructurados, consultas eficientes y visualizaciones, sentando las bases para tareas posteriores de análisis avanzado o minería de datos.
 
+### Markmap del Dataset
+
+![Markmap del Dataset](ecobici/markmap.png)
