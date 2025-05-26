@@ -1,4 +1,4 @@
-# MongoDB + PyMongo Quickstart con Datos de ECOBICI CDMX
+# MongoDB + PyMongo con Datos de ECOBICI CDMX
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1024px-MongoDB_Logo.svg.png" alt="MongoDB" width="120"/>
 
