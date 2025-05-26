@@ -106,4 +106,4 @@ Una vez recopilados, estos archivos se limpian, transforman y almacenan en una b
 
 ### Markmap del Dataset
 
-![Markmap del Dataset](ecobici/markmap.png)
+![Markmap del Dataset](ecobici/assets/markmap.png)

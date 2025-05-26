@@ -14,7 +14,7 @@ El conjunto de datos de **Ecobici CDMX** contiene registros detallados de viajes
 
 ## Ecobici CDMX Dataset
 
-![Markmap](markmap.png)
+![Markmap](assets/markmap.png)
 
 ## Aplicaciones
 
