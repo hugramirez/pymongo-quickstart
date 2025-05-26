@@ -53,9 +53,12 @@ class EcobiciDataDownloader:
     """Main class for downloading Ecobici data."""
 
     DATE_PATTERNS = [
-        re.compile(r'(\d{4})[_-](\d{1,2})$'),  # YYYY_MM or YYYY-MM
-        re.compile(r'(\d{4})[_-]([a-z]+)$', re.IGNORECASE),  # YYYY_Mon
-        re.compile(r'(\d{4})[-_](\d{2})[-_](\w+)$')  # YYYY-MM-DD_suffix
+        re.compile(r'(\d{4})[_-](\d{1,2})$'),  # YYYY_MM o YYYY-MM
+        re.compile(r'(\d{4})[_-]([a-záéíóú]+)$', re.IGNORECASE),  # YYYY_Mon (al final)
+        re.compile(r'(\d{4})[-_](\d{2})[-_](\w+)$'),  # YYYY-MM-DD_suffix
+        re.compile(r'(\d{4})(\d{2})$'),  # YYYYMM
+        re.compile(r'(\d{4})[_-](\d{2})'),  # YYYY_MM (más flexible)
+        re.compile(r'(\d{4})[_-]([a-záéíóú]+)', re.IGNORECASE),  # YYYY_Mon en cualquier parte
     ]
 
     def __init__(self, config: Config) -> None:
@@ -93,17 +96,25 @@ class EcobiciDataDownloader:
             return []
 
     def extract_date_from_url(self, url: str) -> str:
-        """Extracts and normalizes the date from the filename in the URL."""
+        """Extracts and normalizes the date from the filename in the URL.
+
+        Tries several patterns to support filenames like:
+        - 202209
+        - datos_abiertos_2024_03-1-1
+        - 2024-03
+        - 2024_mar
+        - 2024-03-01_extra
+        """
         filename = os.path.splitext(os.path.basename(url))[0].lower()
         for pattern in self.DATE_PATTERNS:
             match = pattern.search(filename)
             if match:
-                if pattern == self.DATE_PATTERNS[1]:  # Pattern with textual month
+                if pattern == self.DATE_PATTERNS[1]:
                     month = MONTHS_MAPPING.get(match.group(2)[:3], '00')
                     return f"{match.group(1)}-{month}"
                 return f"{match.group(1)}-{match.group(2).zfill(2)}"
         logging.warning(f"Could not extract date from: {filename}")
-        return '0000-00'
+        return None
 
     def create_folder(self, folder_name: str) -> None:
         """Creates a folder if it does not exist."""
