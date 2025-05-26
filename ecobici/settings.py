@@ -1,7 +1,7 @@
 from typing import Final
 
 BASE_URL: Final[str] = "https://ecobici.cdmx.gob.mx/datos-abiertos/"
-ROOT_FOLDER: Final[str] = "ecobici_historic_csv" # ecobici_data
+ROOT_FOLDER: Final[str] = "ecobici_data" # ecobici_data - ecobici_historic_csv
 MONTHS_MAPPING: Final[dict] = {
     'jan': '01', 'feb': '02', 'mar': '03', 
     'apr': '04', 'may': '05', 'jun': '06',

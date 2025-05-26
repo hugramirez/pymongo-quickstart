@@ -1,6 +1,6 @@
 # Datos abiertos
 
-![Logo Ecobici 2025](https://ecobici.cdmx.gob.mx/wp-content/uploads/2025/02/logo-ecobici-2025.png)
+<img src="https://ecobici.cdmx.gob.mx/wp-content/uploads/2025/02/logo-ecobici-2025.png" alt="Ecobici CDMX" width="120"/>
 
 ## Datos en Tiempo Real
 

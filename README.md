@@ -1,11 +1,8 @@
 # MongoDB + PyMongo Quickstart con Datos de ECOBICI CDMX
 
-<table style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="border: none;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1024px-MongoDB_Logo.svg.png" alt="MongoDB" width="120"/></td>
-    <td style="border: none;"><img src="https://ecobici.cdmx.gob.mx/wp-content/uploads/2025/02/logo-ecobici-2025.png" alt="Ecobici CDMX" width="120"/></td>
-  </tr>
-</table>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1024px-MongoDB_Logo.svg.png" alt="MongoDB" width="120"/>
+
+#
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-%E2%89%A53.6-green.svg)](https://www.mongodb.com/)
