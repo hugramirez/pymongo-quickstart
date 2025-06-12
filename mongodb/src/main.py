@@ -45,16 +45,17 @@ def main() -> None:
     result_many = manager.insert_many(collection_name, docs_many)
     if result_many is not None:
         logging.info(f"Number of documents inserted: {len(result_many.inserted_ids)}")
-        # logging.info(f"Documents inserted with _ids: {result_many.inserted_ids}")
+    else:
+        logging.info("No documents were inserted.")
 
 
     # List collections
-    collections = manager.list_collections()
-    logging.info(f"Collections in the database: {collections}")
+    # collections = manager.list_collections()
+    # logging.info(f"Collections in the database: {collections}")
 
-    # Find documents
-    docs = manager.find(collection_name, {"name": "Ecobici"})
-    logging.info(f"Documents found: {docs}")
+    # # Find documents
+    # docs = manager.find(collection_name, {"name": "Ecobici"})
+    # logging.info(f"Documents found: {docs}")
 
     # Delete the sample collection
     # if manager.drop_collection(collection_name):

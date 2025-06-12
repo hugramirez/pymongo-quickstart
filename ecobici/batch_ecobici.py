@@ -22,7 +22,7 @@ def setup_logging() -> None:
             logging.StreamHandler()
         ]
     )
-    
+
 @dataclass
 class CsvFileInfo:
     """Stores information about a CSV file to download.
