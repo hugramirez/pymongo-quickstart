@@ -16,7 +16,7 @@ load_dotenv()
 
 class EcobiciDataExtractor:
     
-    def __init__(self, source: str, subfolder: str = "ecobici_data"):
+    def __init__(self, source: str, subfolder: str = "ecobici/ecobici_data"):
         self.source = source
         self.subfolder = subfolder
 
