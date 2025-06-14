@@ -13,6 +13,7 @@ def main():
     transformer = EcobiciDataTransformer()
     try:
         start_time = time.time()
+        extractor.get_station_coordinates()
         file_paths = extractor.list_csv_files()
         if file_paths:
             df = extractor.read_files_in_parallel_pandas(file_paths[:5], max_workers=max_workers)
